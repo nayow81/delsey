@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>AIR MILES - Brand Store - Delsey</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="https://pattern-library.airmiles.ca/latest/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style type="text/css">
+        /****** MOBILE FIXES ******/
+        @media only screen and (min-width : 768px) {
+            .bootstrap .delsey-difference {
+                margin-top: 400px;
+            }
+
+            .mobile_device_375px {
+                display: none;
+            }
+        }
+
+        @media (max-width: 47.9em) {
+            .bootstrap .am-content-drawer:after {
+                left: 300px !important;
+            }
+        }
+
+        @media (max-width: 61.9em) {
+            .bootstrap .am-content-drawer:after {
+                left: 405px !important;
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+            .bootstrap .delsey-specialty p {
+                color: #000;
+            }
+
+            .mobile_device_375px {
+                display: block;
+            }
+
+            .button-padding {
+                margin-bottom: 50% !important;
+            }
+
+            .bootstrap .desktop {
+                display: none;
+            }
+
+            .mobilecenterp {
+                margin: auto;
+            }
+
+            .bootstrap h1 {
+                font-size: 42px !important;
+            }
+
+            .bootstrap h2 {
+                font-size: 26px !important;
+                padding-top: 0.5em !important;
+                padding-bottom: 1em !important;
+            }
+
+            .bootstrap .breadcrumbs {
+                font-size: 16px !important;
+            }
+
+            .col-center {
+                padding: 0px 15px 0px 15px !important;
+            }
+
+            .bootstrap h4 {
+                font-size: 22px !important;
+            }
+
+            .bootstrap button.am-button.am-button--secondary {
+                float: none !important;
+            }
+
+            .bootstrap .wantmore h5 {
+                padding-top: 0px !important;
+            }
+
+            .right-column #header h1 {
+                padding-top: 0xp !important;
+            }
+
+            .bootstrap .breadcrumbs a {
+                color: #fff !important;
+                font-family: 'omnes', Arial, sans-serif;
+                font-size: 16px !important;
+            }
+
+            .bootstrap .am-content-drawer:after {
+                left: 232px !important;
+            }
+
+            .bootstrap a {
+                text-decoration: none !important;
+            }
+
+            .bootstrap .delsey-difference {
+                margin-top: 150px;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            .bootstrap .fixed-width {
+                flex: 0 0 980px;
+                max-width: 980px;
+            }
+        }
+
+        /****** ATG FIXES ****/
+        .airmiles-bootstrap-header-footer .navbar {
+            margin-bottom: 0px !important;
+        }
+
+        .one-column-page-nonredeemable br {
+            display: none;
+        }
+
+        #master_container {
+            overflow: hidden;
+        }
+
+        #rewardsNavContainer {
+            display: none;
+        }
+
+        .right-column #header {
+            padding-top: 0px;
+        }
+
+        #rewards-container {
+            width: 100%;
+            display: block !important;
+        }
+
+        #rewards-content {
+            width: 100%;
+        }
+
+        #page-content-and-menu .right-column {
+            width: 100%;
+        }
+
+        #extra-content {
+            display: none;
+        }
+
+        #rewards-breadcrumb {
+            display: none;
+        }
+
+        #rewards-content.after_breadcrumb {
+            border: none !important
+        }
+
+        .right-column #header h1 {
+            display: none;
+            padding-top: 0px !important;
+        }
+
+        .bootstrap body {
+            font-family: 'omnes', Arial, sans-serif;
+            color: #5e5e5e;
+            font-size: 16px;
+        }
+
+        .bootstrap h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'omnes', Arial, sans-serif;
+            color: #000;
+            font-style: normal;
+            color: #1790cc;
+        }
+
+        .bootstrap h1 {
+            font-family: 'Lato', Arial, sans-serif;
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 15px;
+        }
+
+        .bootstrap h2 {
+            font-family: Georgia, Times, Times New Roman, serif;
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .bootstrap h3 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 300;
+            text-align: center;
+            color: #000;
+        }
+
+        .bootstrap h4 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: normal;
+            color: #ffffff;
+            padding-top: 30px;
+            padding-bottom 30px;
+        }
+
+        .bootstrap h5 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            color: #5e5e5e;
+            padding-top: 30px;
+            padding-bottom 30px;
+            margin-bottom: 20px;
+        }
+
+        .bootstrap h6 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            color: #5e5e5e;
+            padding-top: 25px;
+        }
+
+        .breadcrumbs {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff !important;
+            padding-bottom: 35px;
+            padding-top: 30px;
+        }
+
+        .breadcrumbs span {
+            font-size: 16px !important;
+        }
+
+        .breadcrumbs .active {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        #breadcumbs.breadcrumbs a:hover {
+            text-decoration: underline !important;
+        }
+
+        .bootstrap a {
+            color: #1790cc;
+            text-decoration: none !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .bootstrap .breadcrumbs a {
+            color: #fff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /*CHRIS: applied to LI*/
+        .bootstrap p,
+        .bootstrap .faqbg li {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 14px !important;
+            font-weight: 300;
+            line-height: normal;
+            color: #5e5e5e;
+        }
+
+        .bootstrap p {
+            padding-bottom: 25px;
+        }
+
+        .bootstrap .centerp {
+            margin: auto;
+            text-align: center;
+            width: 68%;
+            color: #5e5e5e;
+        }
+
+        .bootstrap .am-functional-button__text {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            color: #1790cc;
+            font-weight: 500;
+        }
+
+        .bootstrap .hero-image {
+            max-height: 650px;
+            background: url("img/delsey-hero-image-V2.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: scroll !important;
+        }
+
+        .bootstrap .am-button--primary-white {
+            color: #1790cc !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--primary-white {
+            width: 250px;
+            margin-top: 25px;
+        }
+
+        .bootstrap .am-button--primary {
+            color: #ffffff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--primary {
+            margin-top: 25px;
+        }
+
+        .bootstrap .am-button--secondary {
+            color: #ffffff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--secondary {
+            width: 250px;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .row-center {
+            text-align: center;
+        }
+
+        .col-center {
+            display: inline-block;
+            float: none;
+        }
+
+        .bootstrap .card-header {
+            padding: 0px;
+            margin-bottom: 0;
+            background-color: #dff3fb !important;
+            border-bottom: 0px !important;
+        }
+
+        .bootstrap .card {
+            background-color: #dff3fb;
+            border: 0px solid !important;
+        }
+
+        .bootstrap .btn {
+            padding: 0px !important;
+        }
+
+        .bootstrap .card-body {
+            padding-left: 50px;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            font-weight: 300;
+            color: #231f20;
+            line-height: 20px;
+        }
+
+        #accordion {
+            overflow: hidden;
+        }
+
+        .panel {
+            overflow: hidden;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .no-padding {
+            padding: 0px !important;
+        }
+
+        ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        .bootstrap .card-body a {
+            font-size: 18px;
+        }
+
+        .airmiles-bootstrap-header-footer li {
+            list-style: none !important;
+        }
+
+        .button-padding {
+            padding: 25px 10px 15px 10px;
+            background-color: #fff;
+            margin-bottom: 38%;
+        }
+
+        .delsey-logo {
+            padding-top: 25px;
+        }
+
+        .button-spacing {
+            margin-top: 80px;
+        }
+
+        hr {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: solid;
+            border-width: 1px !important;
+            border-color: #000 !important;
+        }
+
+        .delsey-video-section {
+            background-color: #eaeaea;
+        }
+
+        .delsey-video {
+            padding-top: 38px;
+            padding-bottom: 38px;
+        }
+
+        .vertical-align-auto {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .bootstrap .hardside-section {
+            background: url("img/hardside-bg-V2.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .bootstrap .hardside-section p {
+            color: #fff !important;
+        }
+
+        .bootstrap .hardside-section hr {
+            border: 1px solid #fff !important;
+        }
+
+        .bootstrap .specialty-section hr {
+            border: 1px solid #fff !important;
+        }
+
+        .delsey-hardside {
+            padding-top: 38px;
+            padding-bottom: 38px;
+        }
+
+        .bootstrap .softside-section {
+            background: url("img/softside-bg.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .delsey-softside {
+            padding-top: 38px;
+            padding-bottom: 38px;
+        }
+
+        .bootstrap .specialty-section {
+            background: url("img/specialty-bg-V2.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .delsey-specialty {
+            padding-top: 38px;
+            padding-bottom: 38px;
+        }
+
+        .bootstrap .morethan-section {
+            max-height: 669px;
+            background: url("img/morethan-bg.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .bootstrap .morethan-section p {
+            color: #fff !important;
+        }
+
+        .bootstrap .morethan-section hr {
+            border: 1px solid #fff !important;
+        }
+
+        .delsey-morethan {
+            padding-top: 38px;
+            padding-bottom: 38px;
+            height: 500px;
+        }
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .delsey-video br {
+            display: block;
+        }
+
+        .delsey-morethan br {
+            display: block;
+        }
+
+        .hero-image br {
+            display: block;
+        }
+
+    </style>
+
+    <div class="bootstrap">
+        <!-- Hero Section -->
+
+        <section class="hero-image">
+            <div class="container fixed-width">
+                <div class="row">
+                    <div class="col--lg-12 col--md-12 col--xs-12">
+                        <p id="breadcumbs" class="breadcrumbs"><a data-track-click="on-page-interaction" data-track-id="delsey-breadcrumbs-dream" href="https://rewards.airmiles.ca/merchandise/">Merchandise Rewards</a>&nbsp;<span>&gt;</span>&nbsp;<a data-track-click="on-page-interaction" data-track-id="delsey-breadcrumbs-brandstore" href="https://rewards.airmiles.ca/merchandise/splash/brand-spotlight/">Brand Spotlight</a>&nbsp;<span>&gt;</span>&nbsp;<span class="active">Delsey</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container fixed-width text-center">
+                <img src="img/delsey-logo.png" height="88" width="200" class="delsey-logo">
+                <h1 style="display: block !important; padding-bottom: 15px;">DELSEY is more than <br>simple luggage!</h1>
+                <h2>70 years of know-how, innovation and French style!</h2>
+                <a href="https://rewards.airmiles.ca/merchandise/products/delsey" data-track-id="delsey-hero-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+            </div>
+            <div class="container fixed-width button-spacing">
+                <div class="row button-padding">
+                    <div class="col--lg-4 col--md-4 col--xs-4">
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-hard-sided-luggage" data-track-id="hardside-button" data-track-click="on-page-interaction">
+                            <img alt="Hardside Button" src="img/hardside-btn-V2.png" />
+                        </a>
+                    </div>
+                    <div class="col--lg-4 col--md-4 col--xs-4">
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-soft-side-luggage" data-track-id="softside-button" data-track-click="on-page-interaction">
+                            <img alt="Softside Button" src="img/softside-btn-V2.png" />
+                        </a>
+                    </div>
+                    <div class="col--lg-4 col--md-4 col--xs-4">
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-specialty" data-track-id="specialty-button" data-track-click="on-page-interaction">
+                            <img alt="Specialty Button" src="img/specialty-btn.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- The Delsey Difference -->
+
+        <div class="container fixed-width delsey-difference">
+            <div class="row">
+                <div class="col--lg-12 col--md-12 col--xs-12">
+                    <h3>The Delsey Difference</h3>
+                    <hr width="5%" size="2">
+                    <img style="display: block;" alt="Bag Specs" src="img/delsey-bag-specs.png" />
+                </div>
+            </div>
+        </div>
+
+        <!-- End of The Delsey Difference Section -->
+
+        <!-- The Delsey Difference Video -->
+        <section class="delsey-video-section">
+            <div class="container fixed-width delsey-video">
+                <div class="row">
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center vertical-align-auto">
+                        <h3>The Delsey Movie<br>"What Matters Is Inside"</h3>
+                        <hr width="5%" size="2">
+                        <p>A sensitive adventure story that reminds us that it's not the destination that is important, but the journey. And whatever life brings, it's important to experience it.</p>
+                    </div>
+                    <div class="col--lg-6 col--md-6 col--xs-12">
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed/b8CEd4u1Au4' frameborder='0' allowfullscreen></iframe></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of The Delsey Difference Video Section -->
+
+        <!-- Hard Side Luggage -->
+        <section class="hardside-section">
+            <div class="container fixed-width delsey-hardside">
+                <div class="row">
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center vertical-align-auto">
+                        <img src="img/hardside-image-V2.png">
+
+                    </div>
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center vertical-align-auto">
+                        <h3 style="color: #fff;">Hardside Luggage</h3>
+                        <hr width="5%" size="2">
+                        <p>The feeling of optimum protection remains inherent in hardside luggage. Hardened globetrotters shower praise on 100% polycarbonate.</p>
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-hard-sided-luggage" data-track-id="hardside-section-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Hard Side Section -->
+
+        <!-- Soft Side Luggage -->
+        <section class="softside-section desktop">
+            <div class="container fixed-width delsey-softside">
+                <div class="row">
+
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center vertical-align-auto">
+                        <h3>Softside Luggage</h3>
+                        <hr width="5%" size="2">
+                        <p>Are you looking for a practical cabin case suitable for every journey? From Easyjet cabin baggage to the Ryanair or Air France cabin case, DELSEY offers a wide range of durable and lightweight cases! The most difficult thing will be choosing which one to go for...</p>
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-soft-side-luggage" data-track-id="softside-section-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+                    </div>
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center vertical-align-auto">
+                        <img src="img/softside-image.png">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Soft Side Section -->
+
+        <!-- Mobile Soft Side Luggage -->
+        <section class="softside-section mobile_device_375px">
+            <div class="container fixed-width delsey-softside">
+                <div class="row">
+                    <div class="col--lg-12 col--md-12 col--xs-12 text-center vertical-align-auto">
+                        <img src="img/softside-image.png">
+
+                    </div>
+                    <div class="col--lg-12 col--md-12 col--xs-12 text-center vertical-align-auto">
+                        <h3>Softside Luggage</h3>
+                        <hr width="5%" size="2">
+                        <p>Are you looking for a practical cabin case suitable for every journey? From Easyjet cabin baggage to the Ryanair or Air France cabin case, DELSEY offers a wide range of durable and lightweight cases! The most difficult thing will be choosing which one to go for...</p>
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-soft-side-luggage" data-track-id="softside-section-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Soft Side Section -->
+
+
+        <!-- Specialty -->
+        <section class="specialty-section">
+            <div class="container fixed-width delsey-specialty">
+                <div class="row">
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center vertical-align-auto">
+                        <img src="img/specialty-image.png">
+
+                    </div>
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center  vertical-align-auto">
+                        <h3 style="color: #fff;">Specialty</h3>
+                        <hr width="5%" size="2">
+                        <p style="color: #fff;">From a sleep mask to luggage scales or padlocks, DELSEY offers essential travel accessories for comfortable and secure travel!</p>
+                        <a href="https://rewards.airmiles.ca/merchandise/products/delsey-specialty" data-track-id="specialty-section-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Shop now</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Specialty Section -->
+
+        <!-- More Than -->
+        <section class="morethan-section">
+            <div class="container fixed-width delsey-morethan">
+                <div class="row" style="height:100%;">
+                    <div class="col--lg-6 col--md-6 text-center vertical-align-auto">
+
+                    </div>
+                    <div class="col--lg-6 col--md-6 col--xs-12 text-center  vertical-align-auto">
+                        <h3 style="color: #fff;">Delsey, <br>More Than Just a Suitcase</h3>
+                        <hr width="5%" size="2">
+                        <p>Since 1946, DELSEY has been accompanying travellers from all around the world on both their personal and professional travel. The reason for this longevity is quite simply that our irreverent French luggage brand has been combining expertise, design, innovation, elegance and audacity for 7 decades. Discover our world: suitcases, travel bags, backpacks, toiletry bags, satchels and school bags...We are delighted to be by your side on every step of every adventure! Your journey begins here.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of More Than Section -->
+
+    </div><!-- End of Bootstrap tag -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
